@@ -1,0 +1,37 @@
+.pText {
+  border: 1px solid #969696;
+}
+.pHighlightText {
+  border: 1px solid #ff0000;
+}
+.pRequiredCheckbox {
+  border: #ff0000;
+}
+.pErrorMessage {
+  color: #ff0000;
+}
+
+/* For Pliable Form table */
+td.label {
+  text-align: right;
+  padding: 3px;
+  vertical-align: top;
+}
+td.input, td.errorMessage {
+  padding: 3px;
+  vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

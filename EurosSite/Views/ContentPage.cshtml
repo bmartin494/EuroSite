@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContentPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+}
+
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+
+<section class="section">
+    <img src="/media/1035/isa17d2_rad_img_7595.jpg" class="banner-image">
+
+    <div class="container">
+
+        <div class="col-md-3">
+            <nav class="nav-bar nav-bar--list" style="padding-top: 20px;">
+               <h3>Click links below</h3>
+                @Html.Partial("~/Views/Partials/Navigation/SubNavigation.cshtml")
+            </nav>
+        </div>
+
+        <div class="col-md-9">
+            <article>
+                @Html.GetGridHtml(Model.Content, "bodyText", "bootstrap3-fluid")
+            </article>
+        </div>
+    </div>
+
+</section>
